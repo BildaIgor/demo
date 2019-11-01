@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+</head>
+<body>
+<h2>Привет!</h2>
+<h3>Я умею показывать курсы валют для двух банков(ПриватБанк и МоноБанк).Показываю USD and EUR.</h3>
+{{date}}
+{{#entrySet}}
+<li>{{key}}</li>>
+{{#value}}
+<div>
+    <b>{{from}}/{{to}}</b>
+    <b>BuyValue: {{buy}}</b>
+    <b>SellValue: {{sell}}</b>
+</div>
+{{/value}}
+{{/entrySet}}
+<a href="/main"><h2>Чтобы задать параметры поиска, пройдите авторизацию.</h2>></a>
+
+
+</body>
+</html>

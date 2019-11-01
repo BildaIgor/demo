@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+</head>
+
+<div>
+    <form action="/logout" method="post">
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <input type="submit" value="Sign Out"/>
+    </form>
+</div>
+<body>
+{{date}}
+{{#entrySet}}
+<li>{{key}}</li>>
+{{#value}}
+<div>
+    <b>{{from}}/{{to}}</b>
+    <b>BuyValue: {{buy}}</b>
+    <b>SellValue: {{sell}}</b>
+</div>
+{{/value}}
+{{/entrySet}}
+
+
+
+</body>
+</html>

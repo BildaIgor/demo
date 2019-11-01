@@ -1,0 +1,21 @@
+<html>
+
+<body>
+<div>
+    <form action="/logout" method="post">
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <input type="submit" value="Sign Out"/>
+    </form>
+</div>
+
+<div>
+    <form method="post">
+        <input type="text" name="banks" placeholder="Ведите через запятую интересующие банки. Доступны: ПриватБанк,МоноБанк"/>
+        <input type="text" name="currencies" placeholder="Введите через запятую интересующие валюты. Доступны: USD, EUR"/>
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+
+</body>
+</html>
